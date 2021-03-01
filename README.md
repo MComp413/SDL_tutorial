@@ -41,7 +41,7 @@ ET bilu pede que busquem conhecimento
             "name": "g++ debug",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/debug/a.exe",
+            "program": "${workspaceFolder}/bin/debug/main.exe",
             "args":[],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
@@ -94,7 +94,7 @@ Compilação de objetos:
 
 Compilação de executáveis:
 ```sh
-g++ -g obj/debug/*.o -L <caminho até o SDL2>/SDL2_x86_64-w64-mingw32/lib -L <caminho até o glew>glew-2.1.0/lib/Release/x64 -lmingw32 -lSDL2main lSDL2 lSDL2_image && \
+g++ -g obj/debug/*.o -o main.exe -L <caminho até o SDL2>/SDL2_x86_64-w64-mingw32/lib -L <caminho até o glew>glew-2.1.0/lib/Release/x64 -lmingw32 -lglew32 -lopengl32 -lSDL2main lSDL2 lSDL2_image && \
     move *.exe bin/debug
 ```
 
@@ -108,7 +108,7 @@ Compilação de objetos:
 
 Compilação de executáveis:
 ```sh
-g++ obj/release/*.o -s -L <caminho até o SDL2>/SDL2_x86_64-w64-mingw32/lib -L <caminho até o glew>glew-2.1.0/lib/Release/x64 -lmingw32 -lSDL2main lSDL2 lSDL2_image && \
+g++ obj/release/*.o -o main.exe -s -L <caminho até o SDL2>/SDL2_x86_64-w64-mingw32/lib -L <caminho até o glew>glew-2.1.0/lib/Release/x64 -lmingw32 -lglew32 -lopengl32 -lSDL2main lSDL2 lSDL2_image && \
     move *.exe bin/release
 ```
 

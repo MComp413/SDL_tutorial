@@ -3,6 +3,7 @@
 #include <GL/glew.h>
 
 #include "GameState.hpp"
+#include "Sprite.hpp"
 
 class MainGame
 {
@@ -15,8 +16,10 @@ private:
     int _screenWidth, _screenHeight;
     SDL_Window* _window;
     GameState _gameState;
+    Sprite _sprite;
     
-    int initSystems();
+    void initSystems();
     void gameLoop();
     void processInput();
+    void drawGame();
 };
