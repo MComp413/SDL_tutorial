@@ -4,7 +4,7 @@ ET bilu pede que busquem conhecimento
 
 ## Build e run
 
-É necessário ter instalados o mingw, glew, SDL2 e SDL2_Image. Os arquivos .dll do SDL2 e SDL2_Image precisam ser incluídos nos diretórios de destino dos executáveis, assim como a pasta de recursos res.
+É necessário ter instalados MinGW, glew, SDL2 e SDL2_Image. Os arquivos .dll do glew, SDL2 e SDL2_Image, no diretório deps, precisam ser incluídos nos diretórios de destino dos executáveis, assim como os recursos estáticos res.
 
 ## Para rodar no VSCode:
 - Configuração c_cpp_properties.json:
